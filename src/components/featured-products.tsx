@@ -36,7 +36,7 @@ const FeaturedProducts = () => {
                   <div className="p-1">
                     <Card className="py-4 border border-gray-200 shadow-none">
                       <CardContent className="relative flex items-center justify-center px-6 py-6">
-                        <Image src={`${process.env.NEXT_PUBLIC_BACKEND_URL}${images[0].url}`} alt="Imagen" />
+                        <Image height={200} width={200} src={`${process.env.NEXT_PUBLIC_BACKEND_URL}${images[0].url}`} alt="Imagen" />
                         <div className="absolute w-full px-6 transition duration-300 opacity-0 group-hover:opacity-100 bottom-4 ">
                           <div className="flex justify-center gap-x-6 text-black">
                             <IconButton onClick={() => router.push(`product/${slug}`)} icon={<Expand size={20} />} className="text-gray-600" />
