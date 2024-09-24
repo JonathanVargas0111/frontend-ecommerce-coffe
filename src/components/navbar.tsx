@@ -17,7 +17,7 @@ const NavBar = () => {
             </h1>
             {/* Mobile */}
             <div className='flex md:hidden'>
-                <ItemsMenuMobile/>
+                <ItemsMenuMobile />
             </div>
             {/*  Desktop */}
             <div className='items-center justify-between hidden md:flex'>
