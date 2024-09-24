@@ -10,7 +10,8 @@ const ItemsMenuMobile = () => {
       <PopoverTrigger>
         <Menu />
       </PopoverTrigger>
-      <PopoverContent>
+      <PopoverContent className='bg-white mt-4 w-screen h-screen text-black  z-50 
+      transition-transform transform duration-800 origin-top'>
         <Link href={"categories/cafe-molido"} className='block p-5'>Café molido</Link>
         <Link href={"categories/cafe-grano"} className='block p-5'>Café en grano</Link>
         <Link href={"categories/cafe-capsula"} className='block p-5'>Café en cápsulas</Link>
