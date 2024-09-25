@@ -13,7 +13,7 @@ import Image from "next/image"
 
 const FeaturedProducts = () => {
 
-  const { loading, result }: ResponseType = useGetFeaturedProducts()
+  const { loading, result }: ResponseType<ProductType[]> = useGetFeaturedProducts()
   const router = useRouter()
 
   return (

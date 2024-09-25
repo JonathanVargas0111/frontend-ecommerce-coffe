@@ -15,12 +15,11 @@ export type ProductType = {
         }
     ];
     category: {
-        data: {
-            attributes: {
+        data: [
+            {
                 slug: string;
                 categoryName: string
-            };
-        };
+            }
+        ]
     };
-
 }
