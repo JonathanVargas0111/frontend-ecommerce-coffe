@@ -15,11 +15,7 @@ export type ProductType = {
         }
     ];
     category: {
-        data: [
-            {
-                slug: string;
-                categoryName: string
-            }
-        ]
+        slug: string;
+        categoryName: string
     };
 }
