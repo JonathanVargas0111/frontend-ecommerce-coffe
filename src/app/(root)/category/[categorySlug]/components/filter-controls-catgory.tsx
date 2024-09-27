@@ -1,10 +1,16 @@
 import React from 'react'
 import FilterOirigin from './filter-origin'
 
-const FilterControlsCategory = () => {
+type FiltersControlsCategoryProps={
+  setFilterOrigin: (origin: string) => void
+}
+
+const FilterControlsCategory = (props:FiltersControlsCategoryProps) => {
+  const {setFilterOrigin} = props
+
   return (
-    <div className='sm:w-[350px] sm:mt-5'>
-        <FilterOirigin></FilterOirigin>
+    <div className='sm:w-[350px] sm:mt-5 p-6'>
+        <FilterOirigin setFilterOrigin={setFilterOrigin}></FilterOirigin>
     </div>
   )
 }
